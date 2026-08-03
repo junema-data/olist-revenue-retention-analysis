@@ -139,12 +139,15 @@ My first pass computed "average revenue per customer" as **R$ 160.99** — and s
 ## Repository
 
 ```
-project4/
+olist-revenue-retention-analysis/
 ├── README.md                      ← this analysis
-├── SQL/                           ← queries + raw Olist tables
-└── EXCEL/
-    ├── city_revenue_analysis.csv  ← city-level revenue aggregate (4,119 cities)
-    └── city_revenue_analysis.xlsx ← PivotTables by state and city
+├── SQL/
+│   ├── city_revenue.sql           ← revenue by city and state
+│   └── delivery_vs_review.sql     ← late delivery vs. review score
+├── city_revenue_analysis.csv      ← city-level revenue aggregate (4,119 cities)
+└── city_revenue_analysis.xlsx     ← PivotTables by state and city
 ```
+
+Raw Olist tables are not committed here — download them from the Kaggle link in the Dataset section above.
 
 *All figures independently validated in pandas against the raw tables. Dataset: Olist (CC BY-NC-SA 4.0), via Kaggle.*
